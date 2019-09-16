@@ -3,11 +3,15 @@ import gif from '../../images/herogif.gif';
 import './hero.css';
 
 class HeroLetter extends React.Component {
+	clickHandler(e){
+		console.log(this.props.isClicked);
+	}
 	render(){
 		let delay = this.props.i*0.5;
 		return (
 			<span id={`letter-${this.props.i}`} 
-			style={{animationDelay:{delay}}}>
+			style={ { color: this.props.isClicked ? 'blue' : 'red'} } 
+			onClick={this.clickHandler.bind(this)}>
 				{this.props.char}
 			</span>
 		)
@@ -15,11 +19,12 @@ class HeroLetter extends React.Component {
 }
 
 class Hero extends React.Component {
+
 	render(){
 		const title = ['B','E','A','T','F','I','R','E'];
 		let header = title.map((v,i)=>{
 			return (
-				<HeroLetter i={i} char={title[i]} />
+				<HeroLetter i={i} char={title[i]} isClicked={false} />
 				)
 		});
 		return (
