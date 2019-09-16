@@ -17,8 +17,6 @@ img.video-background {
 	filter: grayscale(1);
 }
 
-/*MAIN EVENT*/
-
 h1 {
 	font-size: 15rem;
 	margin: 0;
@@ -26,16 +24,5 @@ h1 {
 }
 
 h1 span {
-	opacity: 0;
-	/*cursor: pointer;*/
-}
-
-@keyframes run {
-	0% {opacity: 1;}
-	25% {opacity: 0;}
-	100% {opacity: 0;}
-}
-
-.clicked {
-	color: blue;
+	cursor: pointer;
 }
