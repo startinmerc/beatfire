@@ -2,8 +2,26 @@ import React from 'react';
 import gif from '../../images/herogif.gif';
 import './hero.css';
 
+class HeroLetter extends React.Component {
+	render(){
+		let delay = this.props.i*0.5;
+		return (
+			<span id={`letter-${this.props.i}`} 
+			style={{animationDelay:{delay}}}>
+				{this.props.char}
+			</span>
+		)
+	}
+}
+
 class Hero extends React.Component {
 	render(){
+		const title = ['B','E','A','T','F','I','R','E'];
+		let header = title.map((v,i)=>{
+			return (
+				<HeroLetter i={i} char={title[i]} />
+				)
+		});
 		return (
 			<div className="container">
 				<video autoPlay loop muted playsInline className="video-background">
@@ -13,10 +31,10 @@ class Hero extends React.Component {
 				<img src={gif} className="video-background" alt="video-background"/>
 				<div className="text hero">
 					<h1>
-						<span id="letter-1">B</span><span id="letter-2">E</span><span id="letter-3">A</span><span id="letter-4">T</span>
+						{header.slice(0,4)}
 					</h1>
 					<h1>
-						<span id="letter-5">F</span><span id="letter-6">I</span><span id="letter-7">R</span><span id="letter-8">E</span>
+						{header.slice(4)}
 					</h1>
 
 				</div>
@@ -25,4 +43,4 @@ class Hero extends React.Component {
 	}
 }
 
-export default Hero
+export default Hero;
