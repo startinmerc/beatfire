@@ -19,7 +19,7 @@ class Hero extends React.Component {
 		const title = ['B','E','A','T','F','I','R','E'];
 		let header = title.map((v,i)=>{
 			return (
-				<HeroLetter i={i} char={title[i]} />
+				<HeroLetter key={`letter-${i}}`} i={i} char={title[i]} />
 				)
 		});
 		return (
