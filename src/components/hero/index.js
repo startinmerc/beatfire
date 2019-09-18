@@ -28,7 +28,7 @@ class Hero extends React.Component {
 				  <source src="" type="video/webm" />
 				  <source src="" type="video/mp4" />
 				</video>
-				<img src={gif} className="video-background" alt="video-background"/>
+				<img src={'gif'} className="video-background" alt="video-background"/>
 				<div className="text hero">
 					<h1>
 						{header.slice(0,4)}
