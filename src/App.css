@@ -8,3 +8,15 @@ a {
 	text-decoration: none;
 	color: #000;
 }
+
+section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section:nth-of-type(even){
+	background-color: lightgrey;
+}
