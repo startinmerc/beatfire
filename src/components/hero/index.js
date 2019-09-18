@@ -5,7 +5,6 @@ import './hero.css';
 class HeroLetter extends React.Component {
 	
 	render(){
-		let delay = this.props.i*0.5;
 		return (
 			<span id={`letter-${this.props.i}`}>
 				{this.props.char}
