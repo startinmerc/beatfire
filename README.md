@@ -5,9 +5,7 @@
 ### To Do:
 
 #### General
-* SVG background for sections
-* Intersection observer on SVG for section shapes
-* Scroll snap to sections
+* Scroll snap to sections?
 
 #### Hero
 * Make letters swap class on click
@@ -16,18 +14,17 @@
 * Add howl object for each letter
 * Randomise playthrough of timeline & sounds
 
-#### About
+#### INFO
 * Bio
 * Photo slideshow
  * Custom lightbox?
-
-#### Sounds
+ * As section background?
 * Custom audio player? or bandcamp?
 
-#### Contact
-* Sticky overlay?
+#### BOOK
+* MailToUI?
 
-#### Gigs
+#### GIGS
 * API link to bandsintown/similar?
 
 ---
@@ -39,3 +36,16 @@
 * Initial create-react-app
 * Convert files from old static site
 * Refactor preexisting hero components
+
+### V0.2
+
+#### SVG Background
+* Add HTML from SPA
+* Copy over intersectionObserver
+* Rework JS functions for React
+* Put background's shape in State
+
+#### 4-letter Nav
+* Reduce number of sections & components
+* Rename files & all references to match 4-letter nav names
+* Change nav links
