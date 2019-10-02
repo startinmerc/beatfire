@@ -13,6 +13,9 @@ class App extends React.Component {
 		return (
 			<div className="App">
 				<Nav />
+				<svg  xmlns="http://www.w3.org/2000/svg">
+					<rect id="rect1" rx="0" x="17.5%" y="13%" width="65%" height="74%" />  
+				</svg>
 				<Hero />
 				<About />
 				<Gigs />
