@@ -23,7 +23,7 @@ class Hero extends React.Component {
 				)
 		});
 		return (
-			<section className="container">
+			<div id="hero">
 				<video autoPlay loop muted playsInline className="video-background">
 				  <source src="" type="video/webm" />
 				  <source src="" type="video/mp4" />
@@ -38,7 +38,7 @@ class Hero extends React.Component {
 					</h1>
 
 				</div>
-			</section>
+			</div>
 		)
 	}
 }
