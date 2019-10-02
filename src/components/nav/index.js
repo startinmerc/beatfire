@@ -15,9 +15,9 @@ class Nav extends React.Component {
 					FIRE
 				</h6>
 				<ul>
-					<li><a href="/BOOK">BOOK</a></li>
-					<li><a href="/INFO">INFO</a></li>
-					<li><a href="/GIGS">GIGS</a></li>
+					<li><a href="#book">BOOK</a></li>
+					<li><a href="#info">INFO</a></li>
+					<li><a href="#gigs">GIGS</a></li>
 				</ul>
 			</nav>
 		</div>

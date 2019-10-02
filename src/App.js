@@ -1,10 +1,9 @@
 import React from 'react';
 import Nav from './components/nav';
 import Hero from './components/hero';
-import About from './components/about';
+import Book from './components/book';
+import Info from './components/info';
 import Gigs from './components/gigs';
-import Sounds from './components/sounds';
-import Contact from './components/contact';
 import TweenMax from 'gsap';
 import './App.css';
 
@@ -64,10 +63,12 @@ class App extends React.Component {
 					<rect id="rect1" rx="0" x="17.5%" y="13%" width="65%" height="74%" />  
 				</svg>
 				<Hero />
-				<About />
+				<Book />
+				<Info />
 				<Gigs />
-				<Sounds />
-				<Contact />
+				{/*
+				<script type="text/javascript" src="../Dropbox/Web Dev/Libraries/TweenMax.js"></script>
+			*/}
 			</div>
 		);
 	}
