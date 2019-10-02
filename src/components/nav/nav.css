@@ -18,13 +18,14 @@ nav:hover ul, nav:focus-within ul {
 }
 
 nav ul {
-	transform: translateX(-100%);
+	transform: translateX(-101%);
 	transition: transform 150ms ease-in;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	background-color: #FFF;
 	height: calc(100% - 109px);
+	width: inherit;
 }
 
 nav ul li {
@@ -56,6 +57,7 @@ nav ul li:hover a {
 .controls {
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
