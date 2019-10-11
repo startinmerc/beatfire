@@ -16,8 +16,9 @@ class App extends React.Component {
 		this.svgMorph = this.svgMorph.bind(this);
 	}
 
-	svgMorph(){
-		if(this.state.isCircle){
+	svgMorph(id){
+		const num = Number(id.split('-')[1]);
+		if(num%2<1){
 			TweenMax.to("#rect1", 1, {attr:{rx:"0%", height:"74%", width:"65%", x:"17.5%", y:"13%"}, skewX: "0deg"});
 			this.setState({isCircle: false})
 		} else {

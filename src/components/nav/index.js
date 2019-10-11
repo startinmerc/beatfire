@@ -2,6 +2,15 @@ import React from 'react';
 import './nav.css';
 
 class Nav extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+	}
+
+	handleClick(e){
+		this.props.svgMorph(e.target.id);
+	}
+
 	render(){
 		return (
 		<div>
@@ -10,16 +19,18 @@ class Nav extends React.Component {
 				<button id="stop">STOP</button>
 			</div>
 			<nav>
-				<a href="#hero" onClick={this.props.svgMorph}>
 				<h6>
+				<a href="#hero" onClick={this.handleClick} id="section-0">
+				
 					BEAT<br/>
 					FIRE
-				</h6>
+				
 				</a>
+				</h6>
 				<ul>
-					<li><a href="#book" onClick={this.props.svgMorph}>BOOK</a></li>
-					<li><a href="#info" onClick={this.props.svgMorph}>INFO</a></li>
-					<li><a href="#gigs" onClick={this.props.svgMorph}>GIGS</a></li>
+					<li><a href="#book" onClick={this.handleClick} id="section-1">BOOK</a></li>
+					<li><a href="#info" onClick={this.handleClick} id="section-2">INFO</a></li>
+					<li><a href="#gigs" onClick={this.handleClick} id="section-3">GIGS</a></li>
 				</ul>
 			</nav>
 		</div>
