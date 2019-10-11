@@ -4,7 +4,7 @@ class Book extends React.Component {
 	render() {
 		return (
 			<section id="book">
-				<h2>Contact</h2>
+				<h2>Book</h2>
 			</section>
 		);
 	}
