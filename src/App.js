@@ -20,6 +20,8 @@ class App extends React.Component {
 		const num = Number(id.split('-')[1]);
 		if(num%2<1){
 			TweenMax.to("#rect1", 1, {attr:{rx:"0%", height:"74%", width:"65%", x:"17.5%", y:"13%"}});
+			TweenMax.to("#rect2", 1, {attr:{height:"13%"}});
+			TweenMax.to("#rect3", 1, {attr:{y:"87%", height:"13%"}});
 			this.setState({isCircle: false})
 		} else {
 			TweenMax.to("#rect1", 1, {attr:{rx:"50%", height:"80%", width:"55%", x:"22.5%", y:"10%"}});
