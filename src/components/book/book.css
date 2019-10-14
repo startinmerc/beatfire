@@ -1,11 +1,17 @@
-/*#contact {
-	position: sticky;
-	bottom: 0;
-	right: 0;
-	height: 200px;
-	width: 400px;
+#book {
+	display: flex;
+	text-align: center;
 }
 
-#contact h1 {
-	font-size: 1rem;
-}*/
+#book .content {
+	display: flex;
+}
+
+#book form {
+	display: flex;
+	flex-direction: column;
+}
+
+#book ul {
+	list-style: none;
+}
