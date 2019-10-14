@@ -30,10 +30,14 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Nav svgMorph={this.svgMorph}/>
-				<svg  xmlns="http://www.w3.org/2000/svg">
-					<rect id="rect1" rx="0" x="17.5%" y="13%" width="65%" height="74%" />  
+				<svg  id="svgBack" xmlns="http://www.w3.org/2000/svg">
+					<rect id="rect1" rx="0%" x="17.5%" y="13%" width="65%" height="74%" />
 				</svg>
+				<svg  id="svgFore" xmlns="http://www.w3.org/2000/svg">
+					<rect id="rect2" x="0%" y="0%" width="100%" height="13%" />
+					<rect id="rect3" x="0%" y="87%" width="100%" height="13%" />
+				</svg>
+				<Nav svgMorph={this.svgMorph}/>
 				<Hero />
 				<Book />
 				<Info />
