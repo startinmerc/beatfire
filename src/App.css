@@ -11,6 +11,10 @@ a {
 	box-shadow: inset 0 -3px 0 0 #000;
 }
 
+h1,h2,h3,h4,h5 {
+	color: red;
+}
+
 section {
 	min-height: 100vh;
 	max-width: 60%;
@@ -31,18 +35,10 @@ svg {
 }
 
 #svgBack {
-	background-color: pink;
+	background-color: #000;
 	z-index: -1;
 }
 
-#svgFore {
-	/*z-index: 1;*/
-}
-
 #rect1 {
-	fill: yellow;
-}
-
-#rect2, #rect3 {
-	fill: pink;
+	fill: #fff;
 }
