@@ -6,7 +6,7 @@ class HeroLetter extends React.Component {
 	
 	render(){
 		return (
-			<span id={`letter-${this.props.i}`}>
+			<span id={`letter-${this.props.i}`} className="header-letter">
 				{this.props.char}
 			</span>
 		)
@@ -14,12 +14,16 @@ class HeroLetter extends React.Component {
 }
 
 class Hero extends React.Component {
-
+	constructor(props){
+		super(props);
+		this.state = {
+			title: ['B','E','A','T','F','I','R','E']
+		}
+	}
 	render(){
-		const title = ['B','E','A','T','F','I','R','E'];
-		let header = title.map((v,i)=>{
+		let header = this.state.title.map((v,i)=>{
 			return (
-				<HeroLetter key={`letter-${i}}`} i={i} char={title[i]} />
+				<HeroLetter key={`letter-${i}}`} i={i} char={this.state.title[i]} />
 				)
 		});
 		return (
