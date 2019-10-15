@@ -1,5 +1,5 @@
 import React from 'react';
-import gif from '../../images/herogif.gif';
+// import gif from '../../images/herogif.gif';
 import './hero.css';
 
 class HeroLetter extends React.Component {
