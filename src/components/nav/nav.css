@@ -76,6 +76,7 @@ nav ul li:hover a {
 	cursor: pointer;
 	transform: translateY(-100%);
 	transition: transform 150ms ease-in;
+	background-color: #FFF;
 }
 
 .controls:hover button, .controls:focus-within button {
